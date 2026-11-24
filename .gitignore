@@ -1,59 +1,43 @@
-# Vivado generated directories (keep *.srcs, *.xpr, *.xci and *.bd).
+
+# Vivado generated files
+/vivado/
+/output/
+/dfx_runtime.txt
+/local_tests/
+/scripts/init_structure.tcl
+
+# Keep the repository documentation in the root README only.
+*.md
+!/README.md
+/docs/
+
+# Local validation outputs and tool caches
 .Xil/
-*.cache/
-*.gen/
-*.hw/
-*.ip_user_files/
-*.runs/
-*.sim/
-*.tmp/
-xsim.dir/
-
-# Synthesis / implementation outputs and programming files.
-*.dcp
-*.bit
-*.bin
-*.mcs
-*.pdi
-*.ltx
-*.xsa
-*.sysdef
-*.hwdef
-*.hwh
-
-# Vivado / simulator logs, journals, databases and waveforms.
-*.log
+__Previews/
 *.jou
-*.str
-*.pb
+*.log
 *.wdb
+*.str
+*.xpr
+*.bit
+*.dcp
 *.vcd
-*.fst
-*.vpd
-*.wlf
+*.pb
 *.rpt
 *.rpx
-vivado_pid*
-webtalk*
-
-# Local build directories.
-/build/
-/dist/
-/out/
-
-# Editor backups and OS metadata.
 *.bak
-*.swp
-*.swo
-*~
+*.tmp
+*.tmp.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
 .DS_Store
 Thumbs.db
-Desktop.ini
-
-# Local secrets and Python caches used by project scripts.
-.env
-.env.*
-!.env.example
-__pycache__/
-*.py[cod]
-.venv/
